@@ -1,0 +1,458 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>E-learning | Homepage </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+    <div class="container container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a
+          class="navbar-brand" href="#">E - learning</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="#services">Courses</a></li>
+          <li><a href="learningpath.html">Learning Path</a></li>
+          <li><a href="#contact">Jobs</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              More ▼
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about.html">About</a><br><br>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+          </div>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li id="signUp"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br><br><br>
+
+  <div class="container">
+<div style="display: flex;">
+  <div style="display: flex;">
+    <div class="nav-item dropdown" style="margin: 26px 26px 26px 0px;">
+      <a style="padding: 16px; background-color: rgba(0, 0, 0, 0.3);; color: white; " class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Category ▼
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('frontend')"> Front End</button>
+      <button class="btn" onclick="filterSelection('backend')"> Back End</button>
+      <button class="btn" onclick="filterSelection('bundles')"> Bundles</button>
+      <button class="btn" onclick="filterSelection('computerscience')"> Computer Science Essencials</button>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown" style="margin: 26px 26px 26px 0px; border-radius: 26px;">
+      <a style="padding: 16px; background-color: rgba(0, 0, 0, 0.3);; color: white; " class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Author ▼
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('johndoe')">John Doe</button>
+      <button class="btn" onclick="filterSelection('mosh')"> Mosh hamedi</button>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+    <!-- Portfolio Gallery Grid -->
+
+    <div class="row">
+      <div class="column frontend">
+        <a href="#">
+          <div class="content">
+            <img src="images/all2.jpg" style="width:100%">
+            <h4 class="course-heading"><b>All-Access Subscription</b></h4>
+            <p class="course-p">Become the best coder you can be with unlimited access to all the existing and future
+              courses</p><br><br>
+            <p class="course-p" style="color:rgba(0, 0, 0, .8);">29 Course Bundle</p><br>
+          </div>
+        </a>
+      </div>
+      <div class="column frontend johndoe">
+        <a href="#">
+          <div class="content">
+            <img src="images/V1.jpg" alt="Lights" style="width:100%">
+            <h4 class="course-heading"><b>The Complete Python Course</b></h4>
+            <p class="course-p">Learn Python for AI, Machine Learning, Data Science and App Development</p><br><br>
+            <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+          </div>
+        </a>
+      </div>
+
+      <div class="column bundles">
+        <a href="#">
+        <div class="content">
+          <img src="images/1-4.jpg" alt="Nature" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Full-Stack Javascript Bundle</b></h4>
+          <p class="course-p">Master all Javascript skills you need to land a full-stack job</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">6 course bundle</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/react.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Mastering React</b></h4>
+          <p class="course-p">Don't get left behind. React is the only way foward to building fast, interactive apps ...
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+
+      <div class="column backend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/node.png" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Complete Node.Js Course</b></h4>
+          <p class="course-p">Learn to build highly-scalable, fast and secure RESTful APIs with Node, Express, and
+            MongoDB.</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column bundles">
+        <a href="#">
+        <div class="content">
+          <img src="images/java.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Java Mastery Series</b></h4>
+          <p class="course-p">Master Java - the most popular programming language underpinning most apps and websites
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">3 course bundle</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/sql.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Complete SQL Mastery</b></h4>
+          <p class="course-p"> Master the SQL statements that every software developer needs for designing, developing
+            and maintaining databases</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column bundles">
+        <a href="#">
+        <div class="content">
+          <img src="images/net.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Full-stack .NET Developer Bundle</b></h4>
+          <p class="course-p">Master all the .NET skills you need to land a full-stack developer job</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">8 course bundle</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/angular.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Angular 4: Beginner to Pro</b></h4>
+          <p class="course-p">Build professional, interactive apps with Angular - the most popular framework for
+            building web apps. This course covers everything.</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience">
+        <a href="#">
+        <div class="content">
+          <img src="images/datasctructure.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Data Structures & Algorithms Bundle</b></h4>
+          <p class="course-p">Ace your coding job interview. Learn to write better and faster code.</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">3 course bundle</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/csharp.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>C# Developers: Double Your Coding Speed</b></h4>
+          <p class="course-p">Learn the essential shortcuts and plug-ins that help you write more code in less time</p>
+          <br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/redux.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Redux in Angular</b></h4>
+          <p class="course-p">Better manage the state of your Angular apps, improve their testability and use awesome
+            debugging tools</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience">
+        <a href="#">
+        <div class="content">
+          <img src="images/tudps.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Design Patterns: Part 1</b></h4>
+          <p class="course-p">Behavioral design patterns </p><br><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/tudps.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Design Patterns: Part 2</b></h4>
+          <p class="course-p">Structural design patterns </p><br><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : Mosh hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/java1.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Ultimate Java Part 1: Fundamentals</b></h4>
+          <p class="course-p">Discover Java - the most popular programming language underpinning most apps and websites
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend frontend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/java2.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b> Ultimate Java Part 2: Object-oriented Programming</b></h4>
+          <p class="course-p"> Learn to build robust, maintainable software with object-oriented programming techniques
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend frontend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/java3.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b> Ultimate Java Part 3: Advanced Topics</b></h4>
+          <p class="course-p"> All about Exceptions, Generics, Collections, Lambdas, Streams, Multi-threading and Asynchronous Programming
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/oop.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Object-oriented Programming in JavaScript</b></h4>
+          <p class="course-p">Solidify your understanding of JavaScript and prepare for technical interviews
+          </p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8); text-transform: capitalize;">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/datasctructure2.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Data Structures & Algorithms: Part 1</b></h4>
+            <p class="course-p">Ace your coding job interview. Learn to write better and faster code.</p><br><br>
+            <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/DataStructures3.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate Data Structures & Algorithms: Part 3</b></h4>
+            <p class="course-p">Ace your coding job interview. Learn to write better and faster code.</p><br><br>
+            <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/entity.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Entity Framework 6 in Depth</b></h4>
+          <p class="course-p"> Connect your applications <br> to a SQL Server database</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/asp.png" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Build a Real-world App with ASP.NET Core 1.0+ and Angular 2+</b></h4>
+          <p class="course-p"> Build a full-stack web app with ASP.NET Core, Entity Framework Core and Angular 2 (Angular 4+)</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column computerscience johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/cleancoding.png" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Clean Coding and Refactoring</b></h4>
+          <p class="course-p">Learn the secrets the experts use to write and maintain perfect code</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/csharp1.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate C# Series: Part 1</b></h4>
+          <p class="course-p">Learn the fundamentals of programming with C# with tons of exercises and real-world examples</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend mosh">
+        <a href="#">
+        <div class="content">
+          <img src="images/csharp2.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate C# Series: Part 2</b></h4>
+          <p class="course-p"> Learn all about classes, interfaces and object-oriented programming</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : Mosh Hamedi</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column backend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/csharp3.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>The Ultimate C# Series: Part 3</b></h4>
+          <p class="course-p">Master Events, Delegates, Lambda Expressions, LINQ, Async and more</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/xamarin.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>Xamarin Forms: Build Native Mobile Apps with C#</b></h4>
+          <p class="course-p">Learn to build native mobile apps for Android, iOS and Windows using your existing C# skills</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/js.png" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b>JavaScript Basics for Beginners</b></h4>
+          <p class="course-p">Master the Fundamentals of JavaScript - The Programming Language that Powers the Web</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+      <div class="column frontend johndoe">
+        <a href="#">
+        <div class="content">
+          <img src="images/mvc.jpg" alt="Car" style="width:100%">
+          <h4 class="course-heading"><b> The Complete ASP.NET MVC 5 Course</b></h4>
+          <p class="course-p">Learn to build and deploy fast and secure web applications with ASP.NET MVC 5</p><br><br>
+          <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : John Doe</p><br>
+        </div>
+        </a>
+      </div>
+
+<div class="column frontend mosh">
+  <a href="#">
+  <div class="content">
+    <img src="images/Redux1.jpg" alt="Car" style="width:100%">
+    <h4 class="course-heading"><b> The Ultimate Redux Course </b></h4>
+    <p class="course-p">Go from beginner to expert in 6 hours. Everything you need to build modern apps with Redux.</p><br><br>
+    <p class="course-p" style="color:rgba(0, 0, 0, .8);">Author : Mosh Hamedi</p><br>
+  </div>
+  </a>
+</div>
+      <!-- END GRID -->
+    </div>
+  </div>
+
+  <!-- END MAIN -->
+  </div>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footerDiv">
+        <div>© E-learning 2020</div>
+        <div style="display: flex; flex-direction: column;">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div><a href="#">Affiliates</a></div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

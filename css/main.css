@@ -765,7 +765,7 @@ footer a:hover{
 
 @media (max-width : 599px){
     .column {
-        width: 80%;
+       width: 100%;
         float: unset;
         margin:auto
       }
